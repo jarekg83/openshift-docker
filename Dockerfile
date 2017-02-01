@@ -1,2 +1,2 @@
-FROM centos/php-56-centos7
-COPY index.php /opt/app-root/src/
+FROM php:7.0-apache
+COPY index.php /var/www/html/
