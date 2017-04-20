@@ -4,7 +4,7 @@ RUN sed -i 's/Listen 80/Listen 8080/g;s/User apache/User default/g;s/Group apach
 
 RUN useradd -U -u 10001 default
 RUN chown -R default:default /var/log/httpd/ /etc/httpd /run/httpd
-RUN chmod -R 777 /run/httpd
+RUN chmod -R 777 /run/httpd /var/log/httpd
 
 COPY index.php /var/www/html/
 
