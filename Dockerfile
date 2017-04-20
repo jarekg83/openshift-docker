@@ -9,5 +9,6 @@ RUN chmod -R 777 /run/httpd /var/log/httpd
 COPY index.php /var/www/html/
 
 USER default
+EXPOSE 8080
 
 CMD [ "httpd" , "-D" , "FOREGROUND" ]
